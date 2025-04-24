@@ -1,0 +1,39 @@
+
+// Creating variables for Appointment 
+public class Appointment {
+
+	private String date;
+	private String time;
+	
+// Constructor 
+	public Appointment (String date, String time) {
+		
+		this.date = date;
+		this.time = time;
+		
+	}
+	
+	
+	//setting footers and getters
+	
+	public String getTime() {
+		return time;
+	}
+	public void setTime(String time) {
+		this.time = time;
+	}
+	public String getDate() {
+		return date;
+	}
+	public void setDate(String date) {
+		this.date = date;
+	}
+	
+	
+	//Comparing the set time in calendar to ensure availability
+	
+	public boolean compare(Appointment other) {
+		return this.date.equals(other.date) && this.time.equals(other.time);
+	}
+
+}
