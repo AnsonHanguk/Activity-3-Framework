@@ -1,0 +1,76 @@
+
+//create variables for Survey
+public class Survey {
+	private String surveynumber;
+	private String Questionset;
+	private String Answernset;
+	
+//Create variables for Survey Questions
+	private String Question;
+	private String Questionnumber;
+	
+	// Constructor for Survey
+		public Survey (String surveynumber, String Questionset, String Answernset ){
+			
+			this.surveynumber = surveynumber;
+			this.Questionset = Questionset;
+			this.Answernset = Answernset;
+		}
+		
+		// Constructor for Survey Questions
+				public Survey (String Question, String Questionnumber ){
+					
+					this.Question = Question;
+					this.Questionnumber = Questionnumber;
+				
+				}
+	
+	
+	public String getSurveynumber() {
+		return surveynumber;
+	}
+	public void setSurveynumber(String surveynumber) {
+		this.surveynumber = surveynumber;
+	}
+	
+	//Get the question number and set with question set
+	// Display questions with corresponding question set
+	public String getQUestionset() {
+		return Questionset;
+	}
+	public void setQUestionset(String qUestionset) {
+		Questionset = qUestionset;
+	}
+	public String getAnswernset() {
+		return Answernset;
+		
+		// Record answers given
+	}
+	public void setAnswernset(String answernset) {
+		Answernset = answernset;
+	}
+
+	
+	//Getters and setters for Survey Questions
+
+	public String getQuestion() {
+		return Question;
+	}
+
+
+	public void setQuestion(String question) {
+		Question = question;
+	}
+
+
+	public String getQuestionnumber() {
+		return Questionnumber;
+	}
+
+
+	public void setQuestionnumber(String questionnumber) {
+		Questionnumber = questionnumber;
+	}
+}
+
+// This program should display QUestions and record answers to determine the service needed for the patient
