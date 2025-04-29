@@ -1,0 +1,64 @@
+
+public class Service {
+
+	//Create Service Needs
+	public class Survey {
+		private String ServiceNumber;
+		private String ServiceName;
+		private String ServiceDescription;
+		
+	//Create variables for Clinic Service
+		private String NeedDescription;
+		
+		// Constructor for Service Needs
+			public Survey (String ServiceNumber, String ServiceName, String ServiceDescription){
+				
+				this.setServiceNumber(ServiceNumber);
+				this.setServiceName(ServiceName);
+				this.setServiceDescription(ServiceDescription);
+			}
+				
+				// Constructor for Clinic Service
+				public Survey (String NeedDescription){
+					
+					this.setNeedDescription(NeedDescription);
+			
+	//Create Getters and Setters 
+}
+//Identify patients needs and provides a service number, name and description (ex Hood River Eye Care, phone number, help resolve eye related issues)
+				public String getServiceNumber() {
+					return ServiceNumber;
+				}
+
+				public void setServiceNumber(String serviceNumber) {
+					ServiceNumber = serviceNumber;
+				}
+				
+
+				public String getServiceName() {
+					return ServiceName;
+				}
+
+				public void setServiceName(String serviceName) {
+					ServiceName = serviceName;
+				}
+
+				public String getServiceDescription() {
+					return ServiceDescription;
+				}
+
+				public void setServiceDescription(String serviceDescription) {
+					ServiceDescription = serviceDescription;
+				}
+
+				public String getNeedDescription() {
+					return NeedDescription;
+				}
+
+				public void setNeedDescription(String needDescription) {
+					NeedDescription = needDescription;
+				}
+	}
+}
+
+//the program should make an appointment based on getters and setters which leads to a referral
